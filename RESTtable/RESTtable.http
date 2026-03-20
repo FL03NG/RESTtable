@@ -1,0 +1,6 @@
+@RESTtable_HostAddress = http://localhost:5012
+
+GET {{RESTtable_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
