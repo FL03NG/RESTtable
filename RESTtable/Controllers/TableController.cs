@@ -27,7 +27,6 @@ namespace RESTtable.Controllers
 
             return Ok(result);
         }
-
         [HttpGet("{id}")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
@@ -40,7 +39,7 @@ namespace RESTtable.Controllers
                 return NotFound();
             }
 
-            return NotFound();
+            return Ok(table);
         }
 
         [HttpPost]
