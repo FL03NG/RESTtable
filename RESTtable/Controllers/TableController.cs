@@ -39,7 +39,7 @@ namespace RESTtable.Controllers
                 return NotFound();
             }
 
-            return Ok(table);
+            return NotFound();
         }
 
         [HttpPost]
